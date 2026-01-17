@@ -2,7 +2,7 @@
 
 A visual node-based AI pipeline editor for creating and running AI workflows with input, transform, and output nodes.
 
-![Pipeline Editor Screenshot](https://raw.githubusercontent.com/turnerworks/ai-pipeline-editor/main/screenshot.png)
+![Pipeline Editor Screenshot](https://raw.githubusercontent.com/turnerworks/ai-pipeline-editor/main/screenshot.svg)
 
 ## Features
 
