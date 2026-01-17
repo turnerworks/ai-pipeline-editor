@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2dd4bf;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#14b8a6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc"/>
+  
+  <!-- Header -->
+  <rect width="800" height="60" fill="url(#headerGrad)"/>
+  <text x="30" y="38" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">AI Pipeline Editor</text>
+  <rect x="650" y="15" width="60" height="30" rx="5" fill="white" opacity="0.2"/>
+  <text x="660" y="35" font-family="Arial" font-size="12" fill="white">Export</text>
+  <rect x="720" y="15" width="60" height="30" rx="5" fill="#059669"/>
+  <text x="728" y="35" font-family="Arial" font-size="12" fill="white">Run</text>
+  
+  <!-- Sidebar -->
+  <rect x="0" y="60" width="180" height="440" fill="#f1f5f9"/>
+  <text x="15" y="90" font-family="Arial" font-size="11" font-weight="bold" fill="#64748b">INPUT NODES</text>
+  <rect x="15" y="105" width="150" height="35" rx="5" fill="#fecaca"/>
+  <text x="35" y="127" font-family="Arial" font-size="12" fill="#7f1d1d">Text Input</text>
+  <rect x="15" y="150" width="150" height="35" rx="5" fill="#fecaca"/>
+  <text x="35" y="172" font-family="Arial" font-size="12" fill="#7f1d1d">Voice Input</text>
+  <rect x="15" y="195" width="150" height="35" rx="5" fill="#fef3c7"/>
+  <text x="35" y="217" font-family="Arial" font-size="12" fill="#78350f">File Input</text>
+  
+  <text x="15" y="260" font-family="Arial" font-size="11" font-weight="bold" fill="#64748b">TRANSFORM NODES</text>
+  <rect x="15" y="275" width="150" height="35" rx="5" fill="#dbeafe"/>
+  <text x="35" y="297" font-family="Arial" font-size="12" fill="#1e3a8a">Rewrite</text>
+  <rect x="15" y="320" width="150" height="35" rx="5" fill="#dbeafe"/>
+  <text x="35" y="342" font-family="Arial" font-size="12" fill="#1e3a8a">Classify</text>
+  <rect x="15" y="365" width="150" height="35" rx="5" fill="#dbeafe"/>
+  <text x="35" y="387" font-family="Arial" font-size="12" fill="#1e3a8a">Translate</text>
+  
+  <!-- Canvas Area -->
+  <rect x="180" y="60" width="620" height="440" fill="white"/>
+  
+  <!-- Node 1: Text Input -->
+  <rect x="220" y="100" width="140" height="80" rx="8" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+  <rect x="220" y="100" width="140" height="25" rx="8" fill="#fef3c7"/>
+  <text x="240" y="118" font-family="Arial" font-size="11" fill="#78350f">Text Input</text>
+  <circle cx="360" y="140" r="8" fill="#10b981"/>
+  <text x="235" y="160" font-family="Arial" font-size="10" fill="#6b7280">Ready</text>
+  
+  <!-- Node 2: Rewrite -->
+  <rect x="420" y="100" width="140" height="80" rx="8" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+  <rect x="420" y="100" width="140" height="25" rx="8" fill="#dbeafe"/>
+  <text x="440" y="118" font-family="Arial" font-size="11" fill="#1e3a8a">Rewrite</text>
+  <circle cx="420" cy="140" r="8" fill="#10b981"/>
+  <circle cx="560" cy="140" r="8" fill="#10b981"/>
+  <text x="435" y="160" font-family="Arial" font-size="10" fill="#6b7280">Processing</text>
+  
+  <!-- Node 3: Text Output -->
+  <rect x="620" y="100" width="140" height="80" rx="8" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+  <rect x="620" y="100" width="140" height="25" rx="8" fill="#dcfce7"/>
+  <text x="640" y="118" font-family="Arial" font-size="11" fill="#166534">Text Output</text>
+  <circle cx="620" cy="140" r="8" fill="#10b981"/>
+  <text x="635" y="160" font-family="Arial" font-size="10" fill="#6b7280">Ready</text>
+  
+  <!-- Connection lines -->
+  <path d="M360 140 Q390 140 420 140" stroke="#94a3b8" stroke-width="2" fill="none"/>
+  <path d="M560 140 Q590 140 620 140" stroke="#94a3b8" stroke-width="2" fill="none"/>
+  
+  <!-- Node 4: Voice Input -->
+  <rect x="220" y="220" width="140" height="80" rx="8" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+  <rect x="220" y="220" width="140" height="25" rx="8" fill="#fecaca"/>
+  <text x="240" y="238" font-family="Arial" font-size="11" fill="#7f1d1d">Voice Input</text>
+  <circle cx="360" cy="260" r="8" fill="#10b981"/>
+  <text x="235" y="280" font-family="Arial" font-size="10" fill="#6b7280">Ready</text>
+  
+  <!-- Node 5: Translate -->
+  <rect x="420" y="220" width="140" height="80" rx="8" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+  <rect x="420" y="220" width="140" height="25" rx="8" fill="#dbeafe"/>
+  <text x="440" y="238" font-family="Arial" font-size="11" fill="#1e3a8a">Translate</text>
+  <circle cx="420" cy="260" r="8" fill="#10b981"/>
+  <circle cx="560" cy="260" r="8" fill="#10b981"/>
+  <text x="435" y="280" font-family="Arial" font-size="10" fill="#6b7280">Ready</text>
+  
+  <!-- Connection line 2 -->
+  <path d="M360 260 Q390 260 420 260" stroke="#94a3b8" stroke-width="2" fill="none"/>
+  
+  <!-- Node 6: Send Email -->
+  <rect x="620" y="220" width="140" height="80" rx="8" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+  <rect x="620" y="220" width="140" height="25" rx="8" fill="#dcfce7"/>
+  <text x="640" y="238" font-family="Arial" font-size="11" fill="#166534">Send Email</text>
+  <circle cx="620" cy="260" r="8" fill="#10b981"/>
+  <text x="635" y="280" font-family="Arial" font-size="10" fill="#6b7280">Ready</text>
+  
+  <!-- Connection line 3 -->
+  <path d="M560 260 Q590 260 620 260" stroke="#94a3b8" stroke-width="2" fill="none"/>
+  
+  <!-- Properties Panel -->
+  <rect x="620" y="340" width="160" height="150" rx="5" fill="#f8fafc" stroke="#e5e7eb"/>
+  <text x="635" y="365" font-family="Arial" font-size="11" font-weight="bold" fill="#374151">NODE: REWRITE</text>
+  <text x="635" y="390" font-family="Arial" font-size="10" fill="#6b7280">Type: transform</text>
+  <text x="635" y="415" font-family="Arial" font-size="10" fill="#6b7280">Status: Processing</text>
+  <rect x="635" y="430" width="130" height="25" rx="3" fill="white" stroke="#d1d5db"/>
+  <text x="645" y="447" font-family="Arial" font-size="10" fill="#9ca3af">Model: GPT-4</text>
+</svg>
